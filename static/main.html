@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<head>
+   <title>Webserver</title>
+   <link rel="stylesheet" media="screen" href ="static/bootstrap.min.css">
+   <link rel="stylesheet" href="static/bootstrap-theme.min.css">
+   <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+ 
+</head>
+<body style="background: grey">
+   <h1 align="center"; style="color: navy">Raspberry Pi Webserver</h1>
+   <p align="center"><button><a href="/dhtpin/get" style="color: teal"> Get Temperature </a></button></p>
+   
+   <h4> {{ temperature }} </h4>
+   <h4> {{ humidity }} </h4>
+   
+   <h2 style="color: blue">GPIO21
+      <button>
+          <a href="/pin1/on" style="color: green"> ON</a>
+      </button>
+      <button>
+         <a href="/pin1/off" style="color: red"> OFF</a>
+      </button>
+   </h2>
+   <h2 style="color: yellow">GPIO20
+      <button>
+          <a href="/pin2/on" style="color: green"> ON</a>
+      </button>
+      <button>
+         <a href="/pin2/off" style="color: red"> OFF</a>
+      </button>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<head>
+   <title>Webserver</title>
+   <link rel="stylesheet" media="screen" href ="static/bootstrap.min.css">
+   <link rel="stylesheet" href="static/bootstrap-theme.min.css">
+   <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+ 
+</head>
+<body background="/static/grow.jpg">
+   <h1 align="center"; style="color: navy">Smart грядка от Smart Glow</h1>
+   <p align="center"><button><a href="/dhtpin/get" style="color: blue"> Показать показатели </a></button></p>
+   <h4> {{ temperature }} </h4>
+   <h4> {{ humidity }} </h4>
+   
+   <h2 style="color: black">Обдув
+      <button>
+          <a href="/pin1/on" style="color: green"> ON</a>
+      </button>
+      <button>
+         <a href="/pin1/off" style="color: red"> OFF</a>
+      </button>
+   </h2>
+   <h2 style="color: black">Полив
+      <button>
+          <a href="/pin2/on" style="color: green"> ON</a>
+      </button>
+      <button>
+         <a href="/pin2/off" style="color: red"> OFF</a>
+      </button>
+   </h2>
+   <h2 style="color: black">Забор излишков
+      <button>
+          <a href="/pin3/on" style="color: green"> ON</a>
+      </button>
+      <button>
+         <a href="/pin3/off" style="color: red"> OFF</a>
+      </button>
+
+</body>
+</html>
